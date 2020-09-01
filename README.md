@@ -86,5 +86,20 @@ mecab = mecab.MeCab()
 mecab.morphs('영등포구청역에 있는 맛집 좀 알려주세요.')
 ['영등포구청역', '에', '있', '는', '맛집', '좀', '알려', '주', '세요', '.']
 
-10. /usr/local/lib/mecab/ 을 콘다 환경의 lib/이동
-/home/tako/anaconda3/envs/han_tf2/lib/
+
+
+
+## Anaconda Sync
+$ vi /etc/ld.so.conf --> /usr/local/lib 추가
+
+$ sudo ldconfig --> 추가한 /usr/local/lib 이하 라이브러리를 로딩하도록
+
+$ ldconfig -p | grep libmecab
+
+--> libmecab.so.2 (libc6,x86-64) => /usr/local/lib/libmecab.so.2
+
+     libmecab.so (libc6,x86-64) => /usr/local/lib/libmecab.so
+
+이렇게 두 줄이 나오면 성공
+
+
