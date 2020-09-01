@@ -86,4 +86,5 @@ mecab = mecab.MeCab()
 mecab.morphs('영등포구청역에 있는 맛집 좀 알려주세요.')
 ['영등포구청역', '에', '있', '는', '맛집', '좀', '알려', '주', '세요', '.']
 
-10. /usr/local/lib/mecab/ 을 콘다 환경으로 
+10. /usr/local/lib/mecab/ 을 콘다 환경의 lib/이동
+/home/tako/anaconda3/envs/han_tf2/lib/
